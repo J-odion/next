@@ -121,7 +121,7 @@ export default function FooterSection() {
                   </p>
                 </div>
                 <p className="z-50 text-[16px] mt-8 lg:mt-0 leading-[20px] font-normal ">
-                  © 2024 CreditGo. All rights reserved.
+                  © 2024 Next. All rights reserved.
                 </p>
               </div>
               <Image
