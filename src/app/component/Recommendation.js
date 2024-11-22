@@ -10,7 +10,7 @@ export default function Recommendation() {
           <p className="text-[36px] lg:text-[36px] leading-[42px] lg:leading-[54px] font-[500]  ">
             Your complete banking toolkit.
           </p>
-          <p className="lg:w-[700px] text-[20px] tetx-[#545454]">
+          <p className="lg:w-[700px] text-[20px] text-[#545454]">
             Integrated solutions designed to streamline product development from
             concept to launch.
           </p>

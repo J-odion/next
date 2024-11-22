@@ -2,9 +2,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-import {
-  LuArrowUpRight,
-} from "react-icons/lu";
+import { LuArrowUpRight } from "react-icons/lu";
 import Image from "next/image";
 
 function CustomSlides({ recommendations }) {
@@ -88,25 +86,28 @@ function CustomSlides({ recommendations }) {
           {recommendations.map((place, index) => (
             <div key={index} className="pl-8 md:pl-0 ">
               <div
-                 style={{ backgroundImage: `url(${place.image})` }}
+                style={{ backgroundImage: `url(${place.image})` }}
                 className="relative w-[250px] md:w-[290px] gap-[8px] flex flex-col p-[18px] lg:p-[28.08px] justify-between h-[350px] md:h-[413.13px]  bg-cover bg-center rounded-[31.58px]   bg-white"
               >
                 <div className="w-full z-10 flex flex-col justify-start h-full">
                   <Image src={place.icon} width={30} height={30} />
                 </div>
-                <div className="relative backdrop-blur-sm  h-[280px] ">
-                  <div className="flex flex-col gap-[34px] ">
-                    <p className="text-white text-[30px] leading-[38px] ">
-                      {place.name}
-                    </p>
-                    <p className="text-white text-[18px] leading-[24.1px]">
-                      {place.text}
-                    </p>
+                <div className="  rounded-md relative">
+                  {/* <div className="h-[220px] w-[232px] rounded-[16px] z-10 absolute bg-white"></div> */}
+                  <div className="relative rounded-[16px] bg-opacity-30 bg-white bg-blend-color backdrop-blur-md  p-4  ">
+                    <div className="flex flex-col gap-[34px] ">
+                      <p className="text-white text-[25px] leading-[38px] ">
+                        {place.name}
+                      </p>
+                      <p className="text-white text-[18px] leading-[24.1px]">
+                        {place.text}
+                      </p>
+                    </div>
+                    <button className="bg-none w-full justify-start lg:w-[180px] flex items-center gap-[10px] text-[16px] leading-[20px] text-white rounded-full  py-[8px]">
+                      Get Started
+                      <LuArrowUpRight color="white" size={14} />
+                    </button>
                   </div>
-                  <button className="bg-none w-full justify-start lg:w-[180px] flex items-center gap-[10px] text-[16px] leading-[20px] text-white rounded-full  py-[8px]">
-                    Get Started
-                    <LuArrowUpRight color="white" size={14} />
-                  </button>
                 </div>
               </div>
             </div>
