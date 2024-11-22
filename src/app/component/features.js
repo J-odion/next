@@ -7,55 +7,55 @@ import { Mixrecommendations } from "../data/data";
 export default function Features() {
   const steps = [
     {
-      icon: "/assets/message-smile-circle.png",
+      icon: "/assets/loans.png",
       name: "Loans",
       desc: "Create and manage diverse lending solutions with flexible terms and rates. From individual loans to group lending, with a loan management system.",
     },
     {
-      icon: "/assets/command.png",
+      icon: "/assets/risk.png",
       name: "Risk Management Tools",
       desc: "Comprehensive risk assessment with automated credit scoring, guarantor tracking, and loan provisioning. Efficiently manage write-offs, refinancing, and loan rescheduling from one dashboard.",
     },
     {
-      icon: "/assets/line-chart-up-03.png",
+      icon: "/assets/support.png",
       name: "Customer Support & Communications",
       desc: "Our flexible CBA scales seamlessly as your business grows, across locations, without compromising performance or user experience.",
     },
     {
-      icon: "/assets/message-smile-circle.png",
+      icon: "/assets/clients.png",
       name: "Client Management",
       desc: "Designed for 99.9% uptime, our platform ensures your customers enjoy smooth, dependable banking services every time they interact with your Microfinance institution.",
     },
     {
-      icon: "/assets/command.png",
+      icon: "/assets/accounting.png",
       name: "Accounting",
       desc: "Our comprehensive CBA platform is tailored to Nigeria's Microfinance ecosystem, helping you navigate local challenges across lending, savings, reporting, and customer service.",
     },
     {
-      icon: "/assets/line-chart-up-03.png",
+      icon: "/assets/security.png",
       name: "Security and Internal Control",
       desc: "Our flexible CBA scales seamlessly as your business grows, across locations, without compromising performance or user experience.",
     },
     {
-      icon: "/assets/message-smile-circle.png",
+      icon: "/assets/transaction.png",
       name: "Transactional Accounts",
       desc: "Designed for 99.9% uptime, our platform ensures your customers enjoy smooth, dependable banking services every time they interact with your Microfinance institution.",
     },
     {
-      icon: "/assets/command.png",
+      icon: "/assets/report.png",
       name: "Reporting",
       desc: "Our comprehensive CBA platform is tailored to Nigeria's Microfinance ecosystem, helping you navigate local challenges across lending, savings, reporting, and customer service.",
     },
     {
-      icon: "/assets/line-chart-up-03.png",
+      icon: "/assets/clean.png",
       name: "Clean UI",
       desc: "Our flexible CBA scales seamlessly as your business grows, across locations, without compromising performance or user experience.",
     },
   ];
   return (
-    <section id="how-it-works" className="w-full flex flex-col ">
-      <div className="flex flex-col gap-8 lg:flex-row w-full justify-between "></div>
-      <div className="w-full flex flex-col gap-[64px] px-10 py-[96px] ">
+    <section id="how-it-works" className=" relative w-full flex flex-col ">
+      <div className="flex flex-col gap-8 z-50 lg:flex-row w-full justify-between "></div>
+      <div className="w-full flex flex-col z-50 gap-[64px] px-10 py-[96px] ">
         <div className="mx-auto lg:w-[60%] gap-6 ">
           <p className="text-[20px] leading-[26px] font-[500] text-center mb-6 text-[#475467]">
             Features
@@ -95,6 +95,14 @@ export default function Features() {
           </div>
         </div>
       </div>
+
+
+      <Image
+          src="/assets/featureBG.png"
+          width={313}
+          height={311}
+          className=" w-full  object-cover absolute bottom-0 z-0"
+        />
     </section>
   );
 }

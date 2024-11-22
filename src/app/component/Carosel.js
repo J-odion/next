@@ -4,8 +4,6 @@ import Slider from "react-slick";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import {
   LuArrowUpRight,
-  LuArrowUpRightSquare,
-  LuCornerRightUp,
 } from "react-icons/lu";
 import Image from "next/image";
 

@@ -4,7 +4,7 @@ import { FaRightLong } from "react-icons/fa6";
 
 export default function FlowThree({ tag, title, desc, btn }) {
   return (
-    <div className="flex flex-col gap-8 lg:justify-between items-start lg:flex-row w-full justify-around ">
+    <div className="flex relative flex-col gap-8 lg:justify-between items-start lg:flex-row w-full justify-around ">
       <div className="w-full lg:w-[584px] flex flex-col lg:gap-[32px] lg:flex-row justify-center lg:justify-start ">
         <div className="flex flex-col w-full justify-center items-center lg:items-start lg:justify-start  ">
           <Image
@@ -28,6 +28,8 @@ export default function FlowThree({ tag, title, desc, btn }) {
           </button>
         </div>
       </div>
+
+      
     </div>
   );
 }

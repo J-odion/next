@@ -3,10 +3,10 @@ import { LuMail, LuMoveRight } from "react-icons/lu";
 
 export default function FooterSection() {
   return (
-    <section id="contact" className="relative pt-10 w-full bg-[#F9F9F9]">
-      <div className="relative my-2  w-full  pt-10 bg-[] rounded-3xl flex flex-col justify-between items-center  mx-auto ">
-        <div className="relative text-[#5C5C5C] flex flex-col justify-between w-full   h-full py-6 items-center z-10 ">
-          <div className=" bg-[#0073F5] bg-cover bg-[url('/assets/subscribeBG.png')] flex flex-col lg:flex-row items-center justify-center lg:justify-between p-[48px] mx-auto w-[90%] lg:w-[1280px] rounded-[32px]">
+    <section id="contact" className="relative  py-20 w-full bg-[#F9F9F9]">
+      <div className="relative my-2  w-full px-10  pt-10 bg-[] rounded-3xl flex flex-col justify-between items-center  mx-auto ">
+        <div className="relative text-[#5C5C5C] px-10 flex flex-col justify-between w-full   h-full py-6 items-center z-10 ">
+          <div className=" bg-[#0073F5] mb-[96px] bg-cover bg-[url('/assets/newsbg.png')] flex flex-col lg:flex-row items-center justify-center lg:justify-between p-[48px] mx-auto w-full rounded-[32px]">
             <h1 className=" lg:w-[411px] text-center lg:text-left gap-4 font-bold leading-[38px] lg:leading-[48px] text-white text-[30px] lg:text-[36px]">
               Sign up for our newsletter
             </h1>
@@ -25,7 +25,7 @@ export default function FooterSection() {
             </div>
           </div>
 
-          <div className="relative w-full mt-8 gap-6 px-14 backdrop-blur-sm ">
+          <div className="relative w-full mt-8 gap-6 backdrop-blur-sm ">
             {/* menus */}
             <div className=" z-50 flex flex-col lg:flex-row justify-between w-full text-[#5C5C5C] gap-8 ">
               {/* logo */}
@@ -124,16 +124,16 @@ export default function FooterSection() {
                   © 2024 Next. All rights reserved.
                 </p>
               </div>
-              <Image
-                src="/assets/footerBG.png"
-                width={100}
-                height={100}
-                className="w-full object-cover absolute bottom-0 z-0 "
-              />
             </div>
           </div>
         </div>
       </div>
+        <Image
+          src="/assets/footerBG.png"
+          width={100}
+          height={100}
+          className="w-full  object-cover absolute bottom-0 z-0 "
+        />
     </section>
   );
 }

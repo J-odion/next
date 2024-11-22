@@ -5,17 +5,32 @@ import { FaRightLong } from "react-icons/fa6";
 export default function InfoTop() {
   return (
     <section id="offers" className=" w-full flex flex-col ">
-      <div className="  bg-[#F9F9F9] p-6 lg:p-[96px] gap-y-[64px] w-full flex flex-col lg:flex-row justify-center items-center ">
-        <FlowThree tag={'Microservices'} title={'Microservices: Your All-in-One Payment Solution'} desc={"Unlock a comprehensive suite of integrated financial services to streamline your business operations and unlock growth. From secure payments to digital banking, we've got you covered."} />
-        <div className=" w-[576px] h-[540px] bg-white rounded-[27px] flex justify-center items-center">
-          <Image
-            src="/assets/NextDocs.png"
-            width={350}
-            height={316}
-            alt={"Next app"}
-            className=" object-cover  lg:w-full "
+      <div className=" relative bg-[#F9F9F9]   w-full flex flex-col lg:flex-row justify-center items-center ">
+        <div className="w-full flex flex-col gap-y-[64px] lg:p-[96px] lg:flex-row justify-center items-center z-50">
+          <FlowThree
+            tag={"Microservices"}
+            title={"Microservices: Your All-in-One Payment Solution"}
+            desc={
+              "Unlock a comprehensive suite of integrated financial services to streamline your business operations and unlock growth. From secure payments to digital banking, we've got you covered."
+            }
           />
+          <div className=" w-[576px] h-[540px] bg-white rounded-[27px] flex justify-center items-center">
+            <Image
+              src="/assets/NextDocs.png"
+              width={350}
+              height={316}
+              alt={"Next app"}
+              className=" object-cover  lg:w-full "
+            />
+          </div>
         </div>
+
+        <Image
+          src="/assets/microservicebg.png"
+          width={313}
+          height={311}
+          className=" object-contain   left-0  absolute bottom-0 z-0 "
+        />
       </div>
 
       <div className="  bg-[white] p-6 lg:p-[96px] gap-[64px] w-full flex flex-col lg:flex-row justify-between items-center ">
@@ -61,7 +76,13 @@ export default function InfoTop() {
       </div>
 
       <div className="  bg-white p-6 lg:p-[96px] gap-y-[64px] w-full flex flex-col lg:flex-row justify-center items-center ">
-        <FlowThree tag={'Microservices'} title={'The only card you’ll ever need. Simple.' } desc={"Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business."} />
+        <FlowThree
+          tag={"Microservices"}
+          title={"The only card you’ll ever need. Simple."}
+          desc={
+            "Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business."
+          }
+        />
         <div className=" w-full lg:w-[576px] lg:p-[50px] h-[540px] rounded-[24px] bg-[#F9F9F9] flex justify-center items-center">
           <Image
             src="/assets/timeline.png"

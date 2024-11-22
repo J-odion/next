@@ -10,7 +10,7 @@ export default function Hero() {
   
   return (
     <section className="flex flex-col justify-between items-center lg:items-center relative w-full py-[40px] lg:py-[96px] gap-[64px] bg-white">
-      <div className="w-full flex flex-col justify-center  items-center gap-[42px]  lg:pl-[49px]">
+      <div className="w-full z-50 flex flex-col justify-center  items-center gap-[42px]  lg:pl-[49px]">
         <div className="flex items-center align-middle  p-2 border text-[#344054] rounded-full justify-around w-[400px] ">
           <div className="flex  p-2 justify-center w-[110px] h-[24px] border rounded-full items-center gap-2">
             <div className="bg-[#EBF4FF] flex justify-center items-center w-[16px] h-[12px] relative rounded-full ">
@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div>
+      <div className="z-50">
         <p className="text-[20px]ont-bold leading-[26px] lg:w-[768px] font-[500] text-center mb-6 text-[#475467]">
           Our Partners
         </p>
@@ -62,6 +62,13 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <Image
+        src="/assets/heroBGg.png"
+        width={100}
+        height={100}
+        className="w-full  object-contain   left-0  absolute bottom-0 z-0 "
+      />
     </section>
   );
 }
