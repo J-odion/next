@@ -4,7 +4,7 @@ import { LuMail, LuMoveRight } from "react-icons/lu";
 export default function FooterSection() {
   return (
     <section id="contact" className="relative  py-20 w-full bg-[#F9F9F9]">
-      <div className="relative my-2  w-full px-10  pt-10 bg-[] rounded-3xl flex flex-col justify-between items-center  mx-auto ">
+      <div className="relative my-2  w-full lg:px-10  pt-10 bg-[] rounded-3xl flex flex-col justify-between items-center  mx-auto ">
         <div className="relative text-[#5C5C5C] px-10 flex flex-col justify-between w-full   h-full py-6 items-center z-10 ">
           <div className=" bg-[#0073F5] mb-[96px] bg-cover bg-[url('/assets/newsbg.png')] flex flex-col lg:flex-row items-center justify-center lg:justify-between p-[48px] mx-auto w-full rounded-[32px]">
             <h1 className=" lg:w-[411px] text-center lg:text-left gap-4 font-bold leading-[38px] lg:leading-[48px] text-white text-[30px] lg:text-[36px]">

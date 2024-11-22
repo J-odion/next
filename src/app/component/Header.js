@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="absolute top-28 left-0 w-full bg-white px-[16px] shadow-md z-10 lg:hidden">
+          <div className="absolute top-28 left-0 w-full bg-white px-[16px] shadow-md z-[9999] lg:hidden">
             <ul className="flex flex-col  justify-between space-y-4 py-[24px]">
               {menus.map((menu, index) => (
                 <li className=" ">
@@ -70,10 +70,10 @@ export default function Navbar() {
 
               {/* Mobile Buttons */}
               <div className="flex flex-col gap-4 mt-4">
-                <button className="border border-[#0073F5] text-[#0073F5] px-4 py-1 text-sm rounded-full">
+                <button className="border border-[#0073F5] text-[#0073F5] px-4 py-3 text-sm rounded-full">
                   Contact Us
                 </button>
-                <button className="bg-[#0073F5] text-white px-4 py-1 text-sm rounded-full">
+                <button className="bg-[#0073F5] text-white px-4 py-3 text-sm rounded-full">
                   Request Demo
                 </button>
               </div>
